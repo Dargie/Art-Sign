@@ -3,3 +3,4 @@
 __pycache__
 as_env
 db.sqlite3
+Art_Sign/settings_prod.py
