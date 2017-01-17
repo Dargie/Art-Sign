@@ -21,6 +21,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Art_Sign.pages',
+    'Art_Sign.agenda',
 ]
 
 MIDDLEWARE = [
