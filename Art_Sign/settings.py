@@ -1,4 +1,5 @@
 import os
+from os.path import join
 
 try:
     from Art_Sign.settings_prod import *
@@ -44,7 +45,9 @@ ROOT_URLCONF = 'Art_Sign.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
