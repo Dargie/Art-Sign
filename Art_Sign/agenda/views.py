@@ -1,4 +1,5 @@
-from django.views.generic.edit import CreateView
+from django.urls import reverse_lazy
+from django.views.generic.edit import CreateView, DeleteView
 from django.views.generic.list import ListView
 
 from Art_Sign.agenda.forms import EventForm
@@ -16,3 +17,6 @@ class EventCreate(CreateView):
     form_class = EventForm
 
 
+class EventDelete(DeleteView):
+    model = Event
+    success_url = reverse_lazy('event-list')
