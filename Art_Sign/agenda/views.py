@@ -15,6 +15,7 @@ class EventCreate(CreateView):
     model = Event
     template_name = 'agenda/new.html'
     form_class = EventForm
+    success_url = reverse_lazy('event-list')
 
 
 class EventDelete(DeleteView):
