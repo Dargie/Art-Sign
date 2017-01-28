@@ -4,7 +4,13 @@ from django.db import models
 
 
 class Event(models.Model):
-
+    """
+    Model Event
+    title: title of the event
+    description: description of the event
+    place: place of the event
+    date: date of the event
+    """
     class Meta:
         verbose_name = "Événement"
         verbose_name_plural = "Événements"
@@ -15,7 +21,7 @@ class Event(models.Model):
     description = models.CharField(max_length=200, blank=True, verbose_name="Description")
 
     def __str__(self):
-        return self.name
+        return self.title
 
     def is_past(self):
         """
