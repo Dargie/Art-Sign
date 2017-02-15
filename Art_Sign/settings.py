@@ -3,17 +3,13 @@ from os.path import join
 
 try:
     from Art_Sign.settings_prod import *
+    DEBUG = False
 except ImportError:
     SECRET_KEY = 'ol)0s7)il7olsz&=#di=6jkp*g@pr$01ptw-#=mic2e7em3az3'
+    DEBUG = True
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -96,9 +92,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr-fr'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Paris'
 
 USE_I18N = True
 
@@ -113,10 +109,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-	os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
 
 # If True, the custom admin will be used ;
 # If False, the Django admin will be used.
-USE_CUSTOM_ADMIN = True
+USE_CUSTOM_ADMIN = False
