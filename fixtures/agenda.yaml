@@ -1,0 +1,21 @@
+- model: agenda.Event
+  pk: 1
+  fields:
+          title: Assemblée générale de l'association
+          date: 2017-03-21T20:30:00+00:00
+          place: Paris
+          description: Assemblée générale annuelle de l'assocaition.
+
+- model: agenda.Event
+  pk: 2
+  fields:
+          title: Bilan de l'année 2016
+          date: 2017-01-26T21:00:00+00:00
+          description: Dressons le bilan de l'année écoulée !
+
+- model: agenda.Event
+  pk: 3
+  fields:
+          title: Spectacle de marionnette
+          date: 2017-01-11T15:00:00+00:00
+          place: Paris
