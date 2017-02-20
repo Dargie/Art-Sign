@@ -30,6 +30,6 @@ class Event(models.Model):
         :rtype: bool
         """
         if self.date > datetime.now():
-            return True
-        elif self.date < datetime.now():
             return False
+        elif self.date < datetime.now():
+            return True
