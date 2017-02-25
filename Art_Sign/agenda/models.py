@@ -18,7 +18,8 @@ class Event(models.Model):
     title = models.CharField(max_length=80, verbose_name="Nom de l'événement")
     date = models.DateTimeField(verbose_name="Date")
     place = models.CharField(max_length=80, blank=True, verbose_name="Lieu")
-    description = models.CharField(max_length=200, blank=True, verbose_name="Description")
+    description = models.CharField(max_length=200, blank=True,
+                                   verbose_name="Description")
 
     def __str__(self):
         return self.title

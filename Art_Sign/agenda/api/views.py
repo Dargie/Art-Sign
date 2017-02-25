@@ -1,6 +1,7 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
-from Art_Sign.agenda.api.serializers import EventSerializer, EventDetailSerializer
+from Art_Sign.agenda.api.serializers import \
+ EventSerializer, EventDetailSerializer
 from Art_Sign.agenda.models import Event
 
 
