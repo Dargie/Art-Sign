@@ -10,6 +10,7 @@ class Event(models.Model):
     description: description of the event
     place: place of the event
     date: date of the event
+    logo: logo of the event
     """
     class Meta:
         verbose_name = "Événement"
@@ -20,7 +21,7 @@ class Event(models.Model):
     place = models.CharField(max_length=80, blank=True, verbose_name="Lieu")
     description = models.CharField(max_length=200, blank=True,
                                    verbose_name="Description")
-
+    logo = models.ImageField(blank=True, upload_to='uploads')
     def __str__(self):
         return self.title
 

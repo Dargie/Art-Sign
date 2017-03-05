@@ -125,6 +125,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATIC_URL = '/static/'
 
+MEDIA_URL = '/'
+
 # If True, the custom admin will be used ;
 # If False, the Django admin will be used.
 USE_CUSTOM_ADMIN = False
