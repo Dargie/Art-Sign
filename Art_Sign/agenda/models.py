@@ -22,6 +22,7 @@ class Event(models.Model):
     description = models.CharField(max_length=200, blank=True,
                                    verbose_name="Description")
     logo = models.ImageField(blank=True, upload_to='uploads')
+
     def __str__(self):
         return self.title
 
@@ -35,3 +36,13 @@ class Event(models.Model):
             return False
         elif self.date < datetime.now():
             return True
+
+    def get_relative_logo_url(self):
+        """
+        Get the relative URL of the logo.
+        """
+        if self.logo:
+            relative_url = self.logo.name
+        elif not self.logo:
+            relative_url = None
+        return relative_url
