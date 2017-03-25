@@ -35,3 +35,13 @@ class Article(models.Model):
             return True
         elif self.pub_date > datetime.now():
             return False
+
+    def get_relative_logo_url(self):
+        """
+        Get the relative URL of the logo.
+        """
+        if self.logo:
+            relative_url = self.logo.name
+        elif not self.logo:
+            relative_url = None
+        return relative_url

@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'Art_Sign.pages',
     'Art_Sign.agenda',
     'Art_Sign.article',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
