@@ -1,6 +1,7 @@
 from datetime import datetime
 
 from django.db import models
+from tinymce import models as tinymce_models
 
 
 class Article(models.Model):
@@ -18,7 +19,7 @@ class Article(models.Model):
     title = models.CharField(max_length=200, verbose_name="Titre")
     pub_date = models.DateTimeField(blank=True, null=True, verbose_name="Date de publication")
     logo = models.ImageField(blank=True, upload_to="uploads")
-    content = models.TextField()
+    content = tinymce_models.HTMLField()
 
     def __str__(self):
         return self.title
