@@ -132,3 +132,9 @@ MEDIA_URL = '/'
 # If True, the custom admin will be used ;
 # If False, the Django admin will be used.
 USE_CUSTOM_ADMIN = False
+
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': 'advanced',
+    'width': '100%',
+    'height': '400'
+    }
