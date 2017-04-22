@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+    'rest_framework_docs',
     'Art_Sign.pages',
     'Art_Sign.agenda',
     'Art_Sign.article',
