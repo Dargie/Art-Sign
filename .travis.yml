@@ -11,3 +11,6 @@ before_script:
 
 script:
   - make test
+
+notifications:
+        irc: "chat.freenode.net#Art'Sign-dev"
