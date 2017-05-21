@@ -21,4 +21,4 @@ class ArticlePublishedAndWithoutLogoFactory(factory.DjangoModelFactory):
         model = Article
 
     title = "Assemblée générale"
-pub_date = datetime.now() - timedelta(days=7)
+    pub_date = datetime.now() - timedelta(days=7)
