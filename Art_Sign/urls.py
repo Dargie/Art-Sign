@@ -1,9 +1,12 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from . import settings
+from Art_Sign import settings
+from Art_Sign.pages.views import home
 
 urlpatterns = [
+    url('^$', home, name='homepage'),
+
     url(r'^', include('Art_Sign.pages.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('Art_Sign.api.urls')),
