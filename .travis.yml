@@ -6,11 +6,6 @@ install:
   - pip install -r requirements.txt
   - pip install -r requirements-dev.txt
 
-before_script:
-  - flake8 --exclude = .\manage.py,.\Art_Sign\settings.py,.\Art_Sign\settings_prod.py,migrations
-
 script:
   - make test
 
-notifications:
-        irc: "chat.freenode.net#Art'Sign-dev"
