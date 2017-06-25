@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^api/', include('Art_Sign.api.urls')),
     url(r'tinymce/', include('tinymce.urls')),
     url(r'^agenda/', include('Art_Sign.agenda.urls')),
+    url(r'^article/', include('Art_Sign.article.urls')),
 ]

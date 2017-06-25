@@ -1,0 +1,5 @@
+<h1>{{ article.title }}</h1>
+{% if article.pub_date %}
+    <h2>Publié le {{ article.pub_date }}</h2>
+{% endif %}
+{% autoescape off %}{{ article.content }}{% endautoescape %}
