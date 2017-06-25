@@ -1,7 +1,7 @@
 <h1>Événements</h1>
 <ul>
     {% for event in object_list %}
-        <li>{{ event.title }}, le {{ event.date }} à {{ event.place }}- {{ event.description }}</li>
+        <li><a href="{% url 'event-detail' pk=event.pk %}">{{ event.title }}</a>, le {{ event.date }} à {{ event.place }}- {{ event.description }}</li>
     {% empty %}
         <li>Pas d'événement pour le moment !</li>
     {% endfor %}
