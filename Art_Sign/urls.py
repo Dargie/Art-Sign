@@ -11,9 +11,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('Art_Sign.api.urls')),
     url(r'tinymce/', include('tinymce.urls')),
+    url(r'^agenda/', include('Art_Sign.agenda.urls')),
 ]
-
-if settings.USE_CUSTOM_ADMIN:
-    urlpatterns += [
-        url(r'^agenda/', include('Art_Sign.agenda.urls')),
-    ]
