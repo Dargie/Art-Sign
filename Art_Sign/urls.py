@@ -1,7 +1,6 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from Art_Sign import settings
 from Art_Sign.pages.views import home
 
 urlpatterns = [
