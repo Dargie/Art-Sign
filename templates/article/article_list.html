@@ -1,3 +1,9 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
 <h1>Articles</h1>
 <ul>
     {% for article in object_list %}
@@ -6,3 +12,6 @@
         <li>Pas d'article pour le moment !</li>
     {% endfor %}
 </ul>
+
+
+{% endblock content %}

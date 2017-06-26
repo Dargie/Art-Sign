@@ -1,3 +1,8 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
 <h1>Événements</h1>
 <ul>
     {% for event in object_list %}
@@ -6,3 +11,6 @@
         <li>Pas d'événement pour le moment !</li>
     {% endfor %}
 </ul>
+
+
+{% endblock content %}
