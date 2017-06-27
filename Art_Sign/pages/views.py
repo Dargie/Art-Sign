@@ -16,3 +16,6 @@ def home(request):
         'last_articles': articles,
     })
 
+
+def about(request):
+    return render(request, 'pages/about.html')
