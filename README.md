@@ -2,7 +2,7 @@
 
 # Art-Sign
 
-Back-end du site Art-Sign, fonctionnant avec Python 3.4 et Django 1.10.
+Back-end du site Art-Sign, fonctionnant avec Python 3.4 et Django 1.11.
 
 
 ---
