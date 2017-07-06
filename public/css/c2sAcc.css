@@ -1,0 +1,177 @@
+header{
+	min-height: 119px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	transition: 0.25s;
+}
+/*la classe .scrolledS0 sera mise sur le header si on a dépassé les 200px de scroll (vers le bas =D )*/
+header.scrolledS0{
+	min-height: 60px;
+	background: RGBa(32,33,35,0.95);
+	box-shadow: 0px 0px 10px 5px black;
+}
+header .centerHeader{
+	width: 1200px;
+	max-width: 95%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+header .centerHeader{
+	height: 119px;
+	transition: 0.25s;
+}
+header.scrolledS0 .centerHeader{
+	height: 60px;
+}
+header .centerHeader .hL200G119{
+	height: 100%;
+}
+header .centerHeader .hL200G119 img{
+	height: 95%;
+}
+header .centerHeader .ls5Rubx{
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+header .centerHeader .ls5Rubx .rubX{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+/*pour les rubriques ayant une liste déroulante*/
+header .centerHeader .ls5Rubx .rubX.slidDownRubx{
+	position: relative;
+}
+header .centerHeader .ls5Rubx .rubX.slidDownRubx .sDImgR{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url("../imgs/bottomShowLs.png") no-repeat;
+	background-position: center;
+	background-size: contain;
+	border-radius: 50%;
+}
+header .centerHeader .ls5Rubx .rubX.slidDownRubx .lsDR86{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 100%;
+	z-index: 10;
+	display: none;
+}
+header .centerHeader .ls5Rubx .rubX.slidDownRubx:hover .lsDR86{
+	display: initial;
+}
+header .centerHeader .ls5Rubx .rubX.slidDownRubx .lsDR86 .rubXSDown{
+	min-height: 119px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+header .centerHeader .ls5Rubx .rubX.slidDownRubx .lsDR86 > div .rubXSDown{
+	min-height: 60px;
+	background: RGBa(32,33,35,0.95);
+	position: relative;
+}
+header.scrolledS0 .centerHeader .ls5Rubx .rubX:hover,
+header .centerHeader .ls5Rubx .rubX.slidDownRubx .lsDR86 .rubXSDown:hover{
+	background: #c85195;
+}
+header .centerHeader .ls5Rubx .rubX.slidDownRubx .lsDR86 > div{
+	width: 100%;
+	position: relative;
+}
+header .centerHeader .ls5Rubx .rubX.slidDownRubx .lsDR86  > div::after{
+	content: "";
+	position: absolute;
+	right: 20%;
+	bottom: 100%;
+	height: 0;
+	width: 0;
+	border-right: 30px solid transparent;
+	border-bottom: 30px solid RGBa(32,33,35,0.95);
+}
+header.scrolledS0 .centerHeader .ls5Rubx .rubX.slidDownRubx .lsDR86  > div::after{
+	content: "";
+	position: initial;
+	border: none;
+}
+header .centerHeader .ls5Rubx .rubX .hr,
+.bannerSlider .txtBanner .hr{
+	width: 0%;
+	height: 2.5px;
+	background: white;
+	color: white;
+	transition: 0.5s;
+	opacity: 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.bannerSlider .txtBanner .hr{
+	height: 7px;
+}
+header .centerHeader .ls5Rubx .rubX:hover .hr,
+.bannerSlider .txtBanner .hr.w100hrC{
+	width: 100%;
+	opacity: 1;
+}
+header .centerHeader .ls5Rubx .rubX .hr .topHrD{
+	position: absolute;
+	left: 100%;
+	bottom: 50%;
+	height: 0;
+	width: 0;
+	z-index: -1;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid white;
+}
+header .centerHeader .ls5Rubx .rubX .hr .bottomHrD{
+	position: absolute;
+	left: 100%;
+	top:  50%;
+	height: 0;
+	width: 0;
+	z-index: -1;
+	border-right: 4px solid transparent;
+	border-top: 4px solid white;
+}
+
+header .centerHeader .ls5Rubx a{
+	color: white;
+	text-decoration: none;
+}
+
+
+.bannerSlider{
+	min-height: 600px;
+	background: transparent;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+.bannerSlider .txtBanner .txtDefaultB{
+	font-size: 2em;
+}
+.bannerSlider .txtBanner .txtCompleteJs{
+	font-style: oblique;
+	font-size: 1.25em;
+}
+
+/* font families pacifito*/
+.bannerSlider .txtBanner .txtDefaultB,
+header .centerHeader a{
+	font-family: "pacifito", "champagneBleux", sans-serif;
+}
+/* font families champagneBleux*/
+.bannerSlider .txtBanner .txtCompleteJs{
+	font-family: "champagneBleux", "lugos", sans-serif;
+}

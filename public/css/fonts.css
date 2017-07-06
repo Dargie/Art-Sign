@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'lugos';
+    src: url('../fonts/lugos.otf');
+}
+@font-face {
+    font-family: 'champagneBleux';
+    src: url('../fonts/champagneBleux.ttf');
+}
+@font-face {
+    font-family: 'pacifito';
+    src: url('../fonts/pacific.ttf');
+}
+*{margin:0px;padding:0px;}
+
+::-moz-selection{ /* Code for Firefox */
+    color: white;
+    background: #c85195;
+}
+::-o-selection{ /* Code for opera */
+    color: white;
+    background: #c85195;
+}
+::-webkit-selection{ /* Code for Chrome */
+    color: white;
+    background: #c85195;
+}
+::-ms-selection {
+   	color: white;
+    background: #c85195;
+}
+::selection {
+   	color: white;
+    background: #c85195;
+}
