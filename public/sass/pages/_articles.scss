@@ -1,0 +1,18 @@
+#container-articles {
+    .article {
+        .article-infos-published {
+            color: $secondary-text-color;
+            font-size: 0.8em;
+        }
+    }
+}
+
+#container-article {
+    .article-published {
+        color: $secondary-text-color;
+        margin-top: -25px;
+    }
+    .article-content {
+        text-align: justify;
+    }
+}

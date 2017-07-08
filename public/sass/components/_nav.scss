@@ -1,0 +1,14 @@
+nav {
+    background-color: $primary-color;
+    .nav-wrapper {
+        .brand-logo {
+            margin-left: 10px;
+        }
+    }
+    a {
+        &:hover {
+            color: $primary-color-text;
+            text-decoration: none;
+        }
+    }
+}

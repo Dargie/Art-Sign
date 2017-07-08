@@ -4,11 +4,18 @@
 {% block content %}
 
 
-<h1>{{ article.title }}</h1>
-{% if article.pub_date %}
-    <h2>Publié le {{ article.pub_date }}</h2>
-{% endif %}
-{% autoescape off %}{{ article.content }}{% endautoescape %}
+<div id="container-article">
+    <h1>{{ article.title }}</h1>
+    {% if article.pub_date %}
+        <p class="article-published">Publié le {{ article.pub_date }}</p>
+    {% endif %}
+
+    <div class="article-content">
+        {% autoescape off %}
+            {{ article.content }}
+        {% endautoescape %}
+    </div>
+</div>
 
 
 {% endblock content %}

@@ -1,0 +1,18 @@
+.card {
+
+    .card-title {
+        color: $primary-color;
+        height: 80px;
+    }
+    .card-content {
+        height: 200px;
+    }
+    .card-action {
+        a {
+            color: $accent-color !important;
+            &:hover {
+                color: darken($accent-color, 10%) !important;
+            }
+        }
+    }
+}

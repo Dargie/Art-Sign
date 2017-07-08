@@ -3,30 +3,40 @@
 
 {% block content %}
 
+<div id="container-home" class="row">
 
-<h1>Art'Sign</h1>
-<a href="{% url 'about' %}">Qui sommes-nous ?</a>
-<a href="{% url 'event-list' %}">Agenda</a>
-<a href="{% url 'article-list' %}">Billets</a>
+    <div class="col s12 m6">
+        <h1>Bienvenue sur notre site!</h1>
+        <p>Retrouver toutes les informations liées à l'assocation</p>
+        <!-- <h1>Art'Sign</h1>
+        <a href="{% url 'about' %}">Qui sommes-nous ?</a>
+        <a href="{% url 'event-list' %}">Agenda</a>
+        <a href="{% url 'article-list' %}">Billets</a>
 
 
-<h2>Prochainement...</h2>
-<ul>
-    {% for event in next_events %}
-        <li><a href="{% url 'event-detail' pk=event.pk %}">{{ event.title }}</a>, le {{ event.date }} à {{ event.place }}- {{ event.description }}</li>
-    {% empty %}
-        <li>Pas d'événement à venir pour le moment !</li>
-    {% endfor %}
-</ul>
+        <h2>Prochainement...</h2>
+        <ul>
+            {% for event in next_events %}
+                <li><a href="{% url 'event-detail' pk=event.pk %}">{{ event.title }}</a>, le {{ event.date }} à {{ event.place }}- {{ event.description }}</li>
+            {% empty %}
+                <li>Pas d'événement à venir pour le moment !</li>
+            {% endfor %}
+        </ul>
 
-<h2>Derniers billets</h2>
-<ul>
-    {% for article in last_articles %}
-        <li><a href="{% url 'article-detail' pk=article.pk %}">{{ article.title }}</a></li>
-    {% empty %}
-        <li>Pas d'article pour le moment !</li>
-    {% endfor %}
-</ul>
-
+        <h2>Derniers billets</h2>
+        <ul>
+            {% for article in last_articles %}
+                <li><a href="{% url 'article-detail' pk=article.pk %}">{{ article.title }}</a></li>
+            {% empty %}
+                <li>Pas d'article pour le moment !</li>
+            {% endfor %}
+        </ul> -->
+    </div>
+    <div class="col s12 m6 video-flc">
+        <div class="video-container">
+            <iframe width="853" height="480" src="//www.youtube.com/embed/rz3jw0_XXoc?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}

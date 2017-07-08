@@ -1,4 +1,5 @@
 {% load static %}
+{% load sass_tags %}
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -7,12 +8,62 @@
     <title>Art'Sign</title>
     <link rel="icon" type="images/jpeg" href="{% static 'img/logo.jpg' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="{% sass_src 'sass/home.scss' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-    {%  block content %}
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">
+                <img src="{% static 'img/logoHeader.png' %}" height="65px"/>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="{% url 'about' %}">Qui sommes-nous ?</a></li>
+                <li><a href="#">Nos réalisations</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">Participez</a></li>
+                <li><a href="#">Sortez</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    {% endblock %}
+    <div class="container">
+        {%  block content %}
+        {% endblock %}
+    </div>
 
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5><i class="fa fa-handshake-o" aria-hidden="true"></i>Nos partenaires</h5>
+                    <p>A compléter - voir si présence des partenaires côté backend</p>
+                    <h5><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>Nous suivre</h5>
+                    <p>Faccebook/Twitter/etc</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5><i class="fa fa-calendar" aria-hidden="true"></i>Prochainement...</h5>
+                    <ul>
+                        {% for event in next_events %}
+                            <li><a class="grey-text text-lighten-3" href="{% url 'event-detail' pk=event.pk %}">{{ event.title }}</a>, le {{ event.date }} à {{ event.place }} - {{ event.description }}</li>
+                        {% empty %}
+                            <li>Pas d'événement à venir pour le moment !&nbsp;<i class="fa fa-frown-o" aria-hidden="true"></i></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright Art'Sign
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/7c8fad8fdd.js"></script>
 </body>
 </html>

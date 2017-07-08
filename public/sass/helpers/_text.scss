@@ -1,0 +1,37 @@
+h1 {
+    color: $accent-color;
+}
+
+h2,h3 {
+    color: lighten($accent-color, 5%);
+}
+
+h4,h5,h6 {
+    color: lighten($accent-color, 10%);
+}
+
+a {
+    color: $accent-color;
+    &:hover {
+        color: darken($accent-color, 10%);
+        text-decoration: underline;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+// Alerts
+.success {
+
+}
+.danger {
+    color: $danger-color;
+}
+.info {
+
+}
+.warning {
+
+}

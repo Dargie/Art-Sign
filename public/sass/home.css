@@ -1,0 +1,55 @@
+h1 { color: #009688; }
+
+h2, h3 { color: #00b09f; }
+
+h4, h5, h6 { color: #00c9b6; }
+
+a { color: #009688; }
+
+a:hover { color: #00635a; text-decoration: underline; }
+
+.bold { font-weight: bold; }
+
+.danger { color: #D32F2F; }
+
+nav { background-color: #2196F3; }
+
+nav .nav-wrapper .brand-logo { margin-left: 10px; }
+
+nav a:hover { color: #FFFFFF; text-decoration: none; }
+
+footer.page-footer { background-color: #2196F3; }
+
+footer.page-footer li { color: #FFFFFF; }
+
+footer .footer-copyright { background-color: #1976D2; }
+
+footer h5, footer p, footer a { color: #FFFFFF; }
+
+footer .fa { color: #BBDEFB; }
+
+.card .card-title { color: #2196F3; height: 80px; }
+
+.card .card-content { height: 200px; }
+
+.card .card-action a { color: #009688 !important; }
+
+.card .card-action a:hover { color: #00635a !important; }
+
+#container-about .content { text-align: justify; }
+
+#container-articles .article .article-infos-published { color: #757575; font-size: 0.8em; }
+
+#container-article .article-published { color: #757575; margin-top: -25px; }
+
+#container-article .article-content { text-align: justify; }
+
+body { font-family: 'Roboto', sans-serif; color: #212121; }
+
+.fa { margin-right: 5px; }
+
+#container-home h1 { font-size: 3em; }
+
+#container-home .video-container { margin: 20px 0; }
+
+/*# sourceMappingURL=/public/sass/home.css.map */

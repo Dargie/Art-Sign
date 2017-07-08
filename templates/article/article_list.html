@@ -3,15 +3,38 @@
 
 {% block content %}
 
+<div id="container-articles">
+    <h1>Articles</h1>
 
-<h1>Articles</h1>
-<ul>
-    {% for article in object_list %}
-        <li><a href="{% url 'article-detail' pk=article.pk %}">{{ article.title }}</a></li>
-    {% empty %}
-        <li>Pas d'article pour le moment !</li>
-    {% endfor %}
-</ul>
-
+    <div class="row">
+        {% for article in object_list %}
+            <div class="col s12 m4 l3 article">
+                <div class="card hoverable">
+                    <div class="card-content">
+                        <span class="card-title">{{ article.title }}</span>
+                        <p class="article-description">
+                            {% autoescape off %}
+                                {{ article.content }}
+                            {% endautoescape %}
+                        </p>
+                        <div class="article-infos">
+                            {% if article.pub_date %}
+                                <p class="article-infos-published">
+                                    <span class="bold">Publié le</span>
+                                    <span class="text">{{ article.pub_date }}</span>
+                                </p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <a href="{% url 'article-detail' pk=article.pk %}">Lire</a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <p class="danger">Pas d'articles pour le moment.</p>
+        {% endfor %}
+    </div>
+</div>
 
 {% endblock content %}

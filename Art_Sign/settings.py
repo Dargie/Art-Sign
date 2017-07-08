@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'Art_Sign.agenda',
     'Art_Sign.article',
     'tinymce',
+    'sass_processor',
 ]
 
 MIDDLEWARE = [
@@ -141,3 +142,16 @@ TINYMCE_DEFAULT_CONFIG = {
     'width': '100%',
     'height': '400'
     }
+
+# SASS options
+SASS_PROCESSOR_INCLUDE_DIRS = [
+    os.path.join(BASE_DIR, 'public/sass'),
+]
+SASS_PROCESSOR_ROOT = 'public/'
+SASS_OUTPUT_STYLE = 'compact'
+
+# STATICFILES_FINDERS = [
+#     'django.contrib.staticfiles.finders.FileSystemFinder',
+#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#     'sass_processor.finders.CssFinder',
+# ]

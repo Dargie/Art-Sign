@@ -1,0 +1,19 @@
+footer {
+    &.page-footer {
+        background-color: $primary-color;
+        li {
+            color: $primary-color-text;
+        }
+    }
+    .footer-copyright {
+        background-color: $primary-color-dark;
+    }
+
+    h5, p, a {
+        color: $primary-color-text;
+    }
+
+    .fa {
+        color: $primary-color-light;
+    }
+}

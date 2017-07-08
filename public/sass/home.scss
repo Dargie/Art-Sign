@@ -1,0 +1,31 @@
+// Basics
+@import "helpers/colors";
+@import "helpers/text";
+
+// Componennts
+@import "components/nav";
+@import "components/footer";
+@import "components/cards";
+
+// Pages
+@import "pages/about";
+@import "pages/articles";
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $primary-text-color;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+#container-home {
+    h1 {
+        font-size: 3em;
+    }
+    .video-container {
+        margin: 20px 0;
+    }
+}
