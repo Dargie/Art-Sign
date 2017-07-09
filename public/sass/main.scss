@@ -10,6 +10,7 @@
 // Pages
 @import "pages/about";
 @import "pages/articles";
+@import "pages/home";
 
 
 body {
@@ -26,14 +27,5 @@ a {
         &:hover {
             text-decoration: none;
         }
-    }
-}
-
-#container-home {
-    h1 {
-        font-size: 3em;
-    }
-    .video-container {
-        margin: 20px 0;
     }
 }
