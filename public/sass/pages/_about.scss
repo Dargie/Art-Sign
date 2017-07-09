@@ -1,5 +1,20 @@
 #container-about {
+    margin-bottom: 20px;
     .content {
         text-align: justify;
+    }
+
+    .team-members {
+        .member {
+            margin: 0 0 15px 0;
+            .member-function {
+                color: $primary-color-dark;
+                font-weight: bold;
+                margin: 0;
+            }
+            .member-name {
+                margin: 0;
+            }
+        }
     }
 }

@@ -48,7 +48,15 @@ footer .fa { color: #BBDEFB; }
 
 .card .card-action a:hover { color: #00635a !important; }
 
+#container-about { margin-bottom: 20px; }
+
 #container-about .content { text-align: justify; }
+
+#container-about .team-members .member { margin: 0 0 15px 0; }
+
+#container-about .team-members .member .member-function { color: #1976D2; font-weight: bold; margin: 0; }
+
+#container-about .team-members .member .member-name { margin: 0; }
 
 #container-articles .article .article-infos-published { color: #757575; font-size: 0.8em; }
 
@@ -59,6 +67,8 @@ footer .fa { color: #BBDEFB; }
 body { font-family: 'Roboto', sans-serif; color: #212121; }
 
 .fa { margin-right: 5px; }
+
+a.btn:hover { text-decoration: none; }
 
 #container-home h1 { font-size: 3em; }
 
