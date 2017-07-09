@@ -1,0 +1,47 @@
+- model: article.Article
+  pk: 1
+  fields:
+          title: Assemblée générale de l'association
+          pub_date: 2017-03-21T20:30:00+00:00
+          category: 1
+          content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nibh id tellus dapibus tempor. Cras urna est, interdum nec tortor eu, scelerisque lacinia metus. Nunc sollicitudin leo quis lorem venenatis venenatis. Donec sit amet commodo urna. Aenean eget gravida urna. Suspendisse vitae accumsan diam, sed dapibus purus. Maecenas venenatis molestie justo, in vulputate nisi dapibus eget. Aliquam sit amet eros in erat rutrum accumsan. Vivamus vulputate ex id nisl mattis venenatis. Sed id finibus lectus. Pellentesque tempor sed massa eu condimentum. Maecenas lacinia massa vel scelerisque tincidunt. Praesent felis lectus, pellentesque pharetra lectus sed, hendrerit aliquam lorem. In ut gravida dui, eget congue lectus. Proin vitae risus ac sem cursus pretium id a mauris.
+
+- model: article.Article
+  pk: 2
+  fields:
+          title: billet 2
+          pub_date: 2017-04-21T20:30:00+00:00
+          category: 1
+          content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nibh id tellus dapibus tempor. Cras urna est, interdum nec tortor eu, scelerisque lacinia metus. Nunc sollicitudin leo quis lorem venenatis venenatis. Donec sit amet commodo urna. Aenean eget gravida urna. Suspendisse vitae accumsan diam, sed dapibus purus. Maecenas venenatis molestie justo, in vulputate nisi dapibus eget. Aliquam sit amet eros in erat rutrum accumsan. Vivamus vulputate ex id nisl mattis venenatis. Sed id finibus lectus. Pellentesque tempor sed massa eu condimentum. Maecenas lacinia massa vel scelerisque tincidunt. Praesent felis lectus, pellentesque pharetra lectus sed, hendrerit aliquam lorem. In ut gravida dui, eget congue lectus. Proin vitae risus ac sem cursus pretium id a mauris.
+
+- model: article.Article
+  pk: 3
+  fields:
+          title: billet 3
+          pub_date: 2018-03-21T20:30:00+00:00
+          category: 2
+          content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nibh id tellus dapibus tempor. Cras urna est, interdum nec tortor eu, scelerisque lacinia metus. Nunc sollicitudin leo quis lorem venenatis venenatis. Donec sit amet commodo urna. Aenean eget gravida urna. Suspendisse vitae accumsan diam, sed dapibus purus. Maecenas venenatis molestie justo, in vulputate nisi dapibus eget. Aliquam sit amet eros in erat rutrum accumsan. Vivamus vulputate ex id nisl mattis venenatis. Sed id finibus lectus. Pellentesque tempor sed massa eu condimentum. Maecenas lacinia massa vel scelerisque tincidunt. Praesent felis lectus, pellentesque pharetra lectus sed, hendrerit aliquam lorem. In ut gravida dui, eget congue lectus. Proin vitae risus ac sem cursus pretium id a mauris.
+
+- model: article.Article
+  pk: 4
+  fields:
+          title: billet 4
+          pub_date: 2018-05-21T20:30:00+00:00
+          category: 2
+          content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nibh id tellus dapibus tempor. Cras urna est, interdum nec tortor eu, scelerisque lacinia metus. Nunc sollicitudin leo quis lorem venenatis venenatis. Donec sit amet commodo urna. Aenean eget gravida urna. Suspendisse vitae accumsan diam, sed dapibus purus. Maecenas venenatis molestie justo, in vulputate nisi dapibus eget. Aliquam sit amet eros in erat rutrum accumsan. Vivamus vulputate ex id nisl mattis venenatis. Sed id finibus lectus. Pellentesque tempor sed massa eu condimentum. Maecenas lacinia massa vel scelerisque tincidunt. Praesent felis lectus, pellentesque pharetra lectus sed, hendrerit aliquam lorem. In ut gravida dui, eget congue lectus. Proin vitae risus ac sem cursus pretium id a mauris.
+
+- model: article.Article
+  pk: 5
+  fields:
+          title: billet 5
+          pub_date: 2015-03-21T20:30:00+00:00
+          category: 3
+          content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nibh id tellus dapibus tempor. Cras urna est, interdum nec tortor eu, scelerisque lacinia metus. Nunc sollicitudin leo quis lorem venenatis venenatis. Donec sit amet commodo urna. Aenean eget gravida urna. Suspendisse vitae accumsan diam, sed dapibus purus. Maecenas venenatis molestie justo, in vulputate nisi dapibus eget. Aliquam sit amet eros in erat rutrum accumsan. Vivamus vulputate ex id nisl mattis venenatis. Sed id finibus lectus. Pellentesque tempor sed massa eu condimentum. Maecenas lacinia massa vel scelerisque tincidunt. Praesent felis lectus, pellentesque pharetra lectus sed, hendrerit aliquam lorem. In ut gravida dui, eget congue lectus. Proin vitae risus ac sem cursus pretium id a mauris.
+
+- model: article.Article
+  pk: 6
+  fields:
+          title: billet 6
+          pub_date: 2017-07-14T20:30:00+00:00
+          category: 3
+          content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nibh id tellus dapibus tempor. Cras urna est, interdum nec tortor eu, scelerisque lacinia metus. Nunc sollicitudin leo quis lorem venenatis venenatis. Donec sit amet commodo urna. Aenean eget gravida urna. Suspendisse vitae accumsan diam, sed dapibus purus. Maecenas venenatis molestie justo, in vulputate nisi dapibus eget. Aliquam sit amet eros in erat rutrum accumsan. Vivamus vulputate ex id nisl mattis venenatis. Sed id finibus lectus. Pellentesque tempor sed massa eu condimentum. Maecenas lacinia massa vel scelerisque tincidunt. Praesent felis lectus, pellentesque pharetra lectus sed, hendrerit aliquam lorem. In ut gravida dui, eget congue lectus. Proin vitae risus ac sem cursus pretium id a mauris.

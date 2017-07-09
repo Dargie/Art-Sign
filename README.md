@@ -15,3 +15,12 @@ Pour installer les dépendances :
 ```
 $ pip install -r requirements.txt
 ```
+Pour appliquer les migrations, et créer la base de données :
+```
+$ python manage.py migrate
+```
+Pour installer les fixtures, et peupler votre base de données :
+```
+$ python manage.py loaddata fixtures/*.yaml
+```
+6 billets et 3 évenements seront alors créés en base.
