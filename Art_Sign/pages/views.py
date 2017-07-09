@@ -19,3 +19,7 @@ def home(request):
 
 def about(request):
     return render(request, 'pages/about.html')
+
+
+def outings(request):
+    return render(request, 'pages/outings.html')

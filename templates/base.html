@@ -26,7 +26,7 @@
                     <li class="{% if url_name == 'index' %}active{% endif %}"><a href="#">Nos réalisations</a></li>
                     <li class="{% if url_name == 'index' %}active{% endif %}"><a href="#">Nos services</a></li>
                     <li class="{% if url_name == 'index' %}active{% endif %}"><a href="#">Participez</a></li>
-                    <li class="{% if url_name == 'index' %}active{% endif %}"><a href="#">Sortez</a></li>
+                    <li class="{% if url_name == 'outings' %}active{% endif %}"><a href="{% url 'outings' %}">Sortez</a></li>
                 </ul>
             {% endwith %}
             <!-- for mobile -->
