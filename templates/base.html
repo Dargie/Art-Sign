@@ -38,10 +38,33 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5><i class="fa fa-handshake-o" aria-hidden="true"></i>Nos partenaires</h5>
-                    <p>A compléter - voir si présence des partenaires côté backend</p>
-                    <h5><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>Nous suivre</h5>
-                    <p>Faccebook/Twitter/etc</p>
+                    <div class="partners">
+                        <h5><i class="fa fa-handshake-o" aria-hidden="true"></i>Nos partenaires</h5>
+                        <ul class="partners">
+                            <li class="partner">
+                                <a href="http://www.paris.fr/" target="_blank">
+                                    <img src="{% static 'img/partners/mairie-de-paris.png' %}" alt="Marie de Paris"/>
+                                </a>
+                            </li>
+                            <li class="partner">
+                                <a href="https://www.iledefrance.fr/" target="_blank">
+                                    <img src="{% static 'img/partners/ile_de_france.png' %}" alt="Île de France"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- TODO : Search a JS lib for social buttons -->
+                    <div class="socials">
+                        <h5><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>Nous suivre</h5>
+                        <ul>
+                            <li class="social">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </li>
+                            <li class="social">
+                                <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5><i class="fa fa-calendar" aria-hidden="true"></i>Prochainement...</h5>

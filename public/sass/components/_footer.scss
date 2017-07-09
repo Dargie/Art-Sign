@@ -9,6 +9,31 @@ footer {
         background-color: $primary-color-dark;
     }
 
+    .partners {
+        img {
+            max-width: 50%;
+            max-height: 40px;
+        }
+    }
+
+    .socials {
+        margin-top: 30px;
+        .social {
+            display: inline-flex;
+            .fa {
+                cursor: pointer;
+                font-size: 30px;
+                margin-right: 15px;
+                &.fa-facebook-official {
+                    color: #3C5A99;
+                }
+                &.fa-google-plus-official {
+                    color: #DB4437;
+                }
+            }
+        }
+    }
+
     h5, p, a {
         color: $primary-color-text;
     }
