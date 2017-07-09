@@ -14,6 +14,6 @@ class HomeAPIView(APIView):
             with open(os.path.join(BASE_DIR, 'videos.txt'), 'r') as videos:
                 video = random.choice(videos.readlines())
         except IOError:
-            video = 'www.youtube.com/embed/rz3jw0_XXoc?rel=0'
+            video = 'https://www.youtube.com/watch?v=rz3jw0_XXoc'
 
         return Response({"video": video})
