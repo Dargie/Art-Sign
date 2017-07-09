@@ -1,3 +1,5 @@
 $(document).ready(function() {
-    $('.modal').modal();
+    // Init components materializeCSS
+    $(".button-collapse").sideNav();        // Menu nav for mobile
+    $('.modal').modal();                    // Init modals
 });
