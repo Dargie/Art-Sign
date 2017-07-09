@@ -21,6 +21,13 @@ class Article(models.Model):
     logo = models.ImageField(blank=True, upload_to="uploads")
     content = tinymce_models.HTMLField()
 
+    CATEGORIES = (
+        (1, 'Réalisations'),
+        (2, 'Services'),
+        (3, 'Sorties'),
+    )
+    category = models.IntegerField(choices=CATEGORIES, null=True, verbose_name="Catégorie")
+
     def __str__(self):
         return self.title
 
@@ -45,3 +52,4 @@ class Article(models.Model):
         elif not self.logo:
             relative_url = None
         return relative_url
+
