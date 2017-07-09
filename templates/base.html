@@ -23,8 +23,8 @@
             {% with url_name=request.resolver_match.url_name %}
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li class="{% if url_name == 'about' %}active{% endif %}"><a href="{% url 'about' %}">Qui sommes-nous ?</a></li>
-                    <li class="{% if url_name == 'index' %}active{% endif %}"><a href="#">Nos réalisations</a></li>
-                    <li class="{% if url_name == 'index' %}active{% endif %}"><a href="#">Nos services</a></li>
+                    <li class="{% if url_name == 'achievements' %}active{% endif %}"><a href="{% url 'achievements' %}">Nos réalisations</a></li>
+                    <li class="{% if url_name == 'services' %}active{% endif %}"><a href="{% url 'services' %}">Nos services</a></li>
                     <li class="{% if url_name == 'index' %}active{% endif %}"><a href="#">Participez</a></li>
                     <li class="{% if url_name == 'outings' %}active{% endif %}"><a href="{% url 'outings' %}">Sortez</a></li>
                 </ul>

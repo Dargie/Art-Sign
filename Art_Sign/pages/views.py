@@ -23,3 +23,11 @@ def about(request):
 
 def outings(request):
     return render(request, 'pages/outings.html')
+
+
+def achievements(request):
+    return render(request, 'pages/achievements.html')
+
+
+def services(request):
+    return render(request, 'pages/services.html')
