@@ -8,8 +8,16 @@ from Art_Sign.article.models import Article
 
 class ArticleListAPI(ListAPIView):
 
-    queryset = Article.objects.exclude(pub_date__gte=datetime.now())
     serializer_class = ArticleListSerializer
+
+    def get_queryset(self):
+        queryset = Article.objects.exclude(pub_date__gte=datetime.now())
+        category = self.request.query_params.get('category', None)
+
+        if category is not None:
+            queryset = queryset.filter(category=category)
+
+        return queryset
 
 
 class ArticleDetailAPI(RetrieveAPIView):
