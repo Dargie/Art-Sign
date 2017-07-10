@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <title>Art'Sign</title>
     <link rel="icon" type="images/jpeg" href="{% static 'img/logo.jpg' %}"/>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="{% sass_src 'sass/main.scss' %}" rel="stylesheet" type="text/css">
@@ -25,8 +24,8 @@
                     <li class="{% if url_name == 'about' %}active{% endif %}"><a href="{% url 'about' %}">Qui sommes-nous ?</a></li>
                     <li class="{% if url_name == 'achievements' %}active{% endif %}"><a href="{% url 'achievements' %}">Nos réalisations</a></li>
                     <li class="{% if url_name == 'services' %}active{% endif %}"><a href="{% url 'services' %}">Nos services</a></li>
-                    <li class="{% if url_name == 'index' %}active{% endif %}"><a href="#">Participez</a></li>
                     <li class="{% if url_name == 'outings' %}active{% endif %}"><a href="{% url 'outings' %}">Sortez</a></li>
+                    <li class="{% if url_name == 'participate' %}active{% endif %}"><a href="{% url 'participate' %}">Participez</a></li>
                 </ul>
             {% endwith %}
             <!-- for mobile -->
@@ -101,5 +100,6 @@
     <script src="https://use.fontawesome.com/7c8fad8fdd.js"></script>
     <script src="{% static 'js/site.js' %}"></script>
     <script src="{% static 'js/home.js' %}"></script>
+    <script src="{% static 'js/participate.js' %}"></script>
 </body>
 </html>

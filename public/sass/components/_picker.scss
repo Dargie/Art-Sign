@@ -1,0 +1,28 @@
+.picker {
+    .picker__date-display {
+        background-color: $primary-color;
+        .picker__day-display {
+            &:after {
+                content: '\f1fd';
+                font-family: FontAwesome;
+                font-size: 100px;
+                display: flex;
+                margin-top: 20px;
+                color: #FFEB3B;
+            }
+        }
+    }
+    .picker__container__wrapper {
+        .picker__day--today {
+            color: $primary-color-dark;
+        }
+        .picker__day--selected {
+            background-color: $primary-color;
+        }
+    }
+    .picker__footer {
+        .picker__close, .picker__today, .picker__clear {
+            color: $primary-color-dark;
+        }
+    }
+}

@@ -31,3 +31,6 @@ def achievements(request):
 
 def services(request):
     return render(request, 'pages/services.html')
+
+def participate(request):
+    return render(request, 'pages/participate.html')

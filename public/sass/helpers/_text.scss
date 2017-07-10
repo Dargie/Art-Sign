@@ -23,15 +23,15 @@ a {
 }
 
 // Alerts
-.success {
-
+.success-text {
+    color: $success-color;
 }
-.danger {
+.danger-text {
     color: $danger-color;
 }
-.info {
-
+.info-text {
+    color: $primary-color-dark;
 }
-.warning {
-
+.warning-text {
+    color: $warning-color;
 }

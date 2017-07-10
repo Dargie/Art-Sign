@@ -1,0 +1,23 @@
+.btn {
+  background-color: $primary-color;
+  i.fa {
+    margin-left: 5px;
+  }
+  &:hover {
+    background-color: $primary-color-dark !important;
+    color: $primary-color-text;
+  }
+  &:focus {
+    background-color: $primary-color-dark !important;
+  }
+}
+
+.btn-floating {
+  background-color: $accent-color;
+  &:hover {
+    background-color: $primary-color-light;
+  }
+  &:focus {
+    background-color: $primary-color-dark;
+  }
+}

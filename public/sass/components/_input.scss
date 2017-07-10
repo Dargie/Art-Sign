@@ -1,0 +1,49 @@
+.input-field {
+  .prefix.active {
+    color: $primary-color-dark !important;
+  }
+
+  input[type=text] {
+    /* label color */
+    label {
+      color: $secondary-text-color !important;
+      font-size: 0.8em;
+    }
+    /* label focus color */
+    &:focus + label {
+      color: $primary-color-text !important;
+    }
+    /* label underline focus color */
+    &:focus {
+      border-bottom: 1px solid $primary-color-text !important;
+      box-shadow: 0 1px 0 0 #000;
+    }
+    /* valid color */
+    &.valid {
+      border-bottom: 1px solid $success-color !important;
+      box-shadow: 0 1px 0 0 darken($success-color, 10%) !important;
+    }
+    /* invalid color */
+    &.invalid {
+      border-bottom: 1px solid $danger-color !important;
+      box-shadow: 0 1px 0 0 darken($danger-color, 10%) !important;
+    }
+  }
+  input:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $primary-color !important;
+    box-shadow: 0 1px 0 0 $primary-color !important;
+  }
+  input:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: $primary-color !important;
+  }
+}
+
+[type="checkbox"]:checked + label:before {
+  border-right: 2px solid $success-color !important;
+  border-bottom: 2px solid $success-color !important;
+}
+
+[type="checkbox"].checkbox-closed:checked + label:after {
+  border: 2px solid $danger-color !important;
+  background-color: $danger-color !important;
+}
