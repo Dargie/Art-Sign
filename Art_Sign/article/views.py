@@ -1,5 +1,7 @@
 import datetime
 
+from django.core.exceptions import PermissionDenied
+from django.utils import timezone
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 
@@ -18,3 +20,11 @@ class ArticleListView(ListView):
 class ArticleDetailView(DetailView):
 
     model = Article
+
+    def get_object(self, *args, **kwargs):
+        now = timezone.now()
+        article = super(ArticleDetailView, self).get_object(*args, **kwargs)
+        if article.pub_date > now:
+            raise PermissionDenied()
+        else:
+            return article
