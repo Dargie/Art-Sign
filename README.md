@@ -34,6 +34,7 @@ Un environnement [Docker](https://docs.docker.com/) et [Docker compose](https://
 ```
 $ docker-compose build
 ```
+L'installation des dépendances Python s'éfféctuent durant cette étape sur la base du fichier `/docker/server/requirement.txt`. Il fuat actualiser ce fichier et reconstruir l'image des qu'une dépendance est ajoutée.
 
 **Démarrer le container** (serveur local et watch gulp)
 ```
