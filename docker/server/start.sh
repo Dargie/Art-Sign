@@ -8,5 +8,6 @@ if [ ! -e /code/db.sqlite3 ]; then
 	rm -f /firstrun.tag
 fi
 
-echo "Starting Django server on *:8000 and Gulp watch task"
+echo "Starting gulp watch task"
+echo "Starting Django server on *:8000"
 python manage.py runserver 0.0.0.0:8000 & gulp watch
