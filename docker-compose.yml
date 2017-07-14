@@ -1,0 +1,8 @@
+version: '3'
+services:
+  server:
+    build: ./docker/server
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
