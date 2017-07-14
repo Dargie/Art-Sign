@@ -3,9 +3,15 @@
 cd /code
 
 if [ ! -e /code/db.sqlite3 ]; then
+	echo "Installing dev database"
 	python manage.py migrate
 	python manage.py loaddata fixtures/*.yaml
 	rm -f /firstrun.tag
+fi
+
+if [ ! -e /code/node_modules ]; then
+	echo "Installing node (gulp) dependancies"
+	npm install
 fi
 
 echo "Starting gulp watch task"
