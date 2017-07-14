@@ -41,7 +41,7 @@ L'installation des dépendances Python s'éfféctuent durant cette étape sur la
 $ docker-compose up
 ```
 
-Le premier démarrage effectue les migrations et l'ajout des fixtures si le fichier `db.sqlite3` n'existe pas puis le serveur se démarre sur [http://localhost:8000/](http://localhost:8000/). Toutes les modifications apportés aux fichiers Sass seront automatiquement pris en compte lors de la sauvegarde.
+Le premier démarrage effectue les migrations et l'ajout des fixtures si le fichier `db.sqlite3` n'existe pas puis le serveur se démarre sur [http://localhost:8000/](http://localhost:8000/). Toutes les modifications apportées aux fichiers Sass seront automatiquement pris en compte lors de la sauvegarde.
 
 Pour démarrer le container en arrière plan ajoutez le paramètre `-d`.
 

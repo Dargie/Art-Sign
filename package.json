@@ -6,12 +6,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EpicKiwi/Art-Sign.git"
+    "url": "git+https://github.com/Art-Sign/Art-Sign.git"
   },
   "bugs": {
-    "url": "https://github.com/EpicKiwi/Art-Sign/issues"
+    "url": "https://github.com/Art-Sign/Art-Sign/issues"
   },
-  "homepage": "https://github.com/EpicKiwi/Art-Sign#readme",
+  "homepage": "https://github.com/Art-Sign/Art-Sign#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
