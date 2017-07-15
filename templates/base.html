@@ -98,13 +98,7 @@
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5><i class="fa fa-calendar" aria-hidden="true"></i>Prochainement...</h5>
-                    <ul>
-                        {% for event in next_events %}
-                            <li><a class="grey-text text-lighten-3" href="{% url 'event-detail' pk=event.pk %}">{{ event.title }}</a>, le {{ event.date }} à {{ event.place }} - {{ event.description }}</li>
-                        {% empty %}
-                            <li>Pas d'événement à venir pour le moment !&nbsp;<i class="fa fa-frown-o" aria-hidden="true"></i></li>
-                        {% endfor %}
-                    </ul>
+                    <div id="footer-next-events" class="next-events"></div>
                 </div>
             </div>
         </div>

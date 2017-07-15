@@ -82,24 +82,7 @@
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5><i class="fa fa-calendar" aria-hidden="true"></i>Prochainement...</h5>
-                    <ul>
-                        {% for event in next_events %}
-                            <div class="center card-panel text-lighten-3 footer-next-event">
-                                <a
-                                    class="grey-text text-lighten-3 next-event-link"
-                                    href="{% url 'event-detail' pk=event.pk %}"
-                                    data-date="{{ event.date }}"
-                                >
-                                    {{ event.title }} à {{ event.place }}
-                                </a>
-                            </div>
-                        {% empty %}
-                            <div class="footer-next-event center card-panel">
-                                Pas d'événement à venir pour le moment !&nbsp;
-                                <i class="fa fa-frown-o" aria-hidden="true"></i>
-                            </div>
-                        {% endfor %}
-                    </ul>
+                    <div id="footer-next-events" class="next-events"></div>
                 </div>
             </div>
         </div>
