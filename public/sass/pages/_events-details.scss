@@ -1,0 +1,11 @@
+.container-event-detail{
+    min-height: 400px;
+
+  &>.event-detail-title{
+
+  }
+  &>.event-detail-description{
+    margin-top: 20px;
+    min-height: 200px;
+  }
+}
