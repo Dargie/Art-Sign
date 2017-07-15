@@ -1,0 +1,108 @@
+{% load static %}
+{% load sass_tags %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Art'Sign</title>
+    <link rel="icon" type="images/jpeg" href="{% static 'img/logo.jpg' %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="{% sass_src 'sass/main.scss' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo">
+                    <img src="{% static 'img/logoHeader.png' %}" height="65px"/>
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                {% with url_name=request.resolver_match.url_name %}
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="{% if url_name == 'about' %}active{% endif %}"><a href="{% url 'about' %}">Qui sommes-nous ?</a></li>
+                        <li class="{% if url_name == 'achievements' %}active{% endif %}"><a href="{% url 'achievements' %}">Nos réalisations</a></li>
+                        <li class="{% if url_name == 'services' %}active{% endif %}"><a href="{% url 'services' %}">Nos services</a></li>
+                        <li class="{% if url_name == 'outings' %}active{% endif %}"><a href="{% url 'outings' %}">Sortez</a></li>
+                        <li class="{% if url_name == 'participate' %}active{% endif %}"><a href="{% url 'participate' %}">Participez</a></li>
+                    </ul>
+                {% endwith %}
+                <!-- for mobile -->
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="{% url 'about' %}">Qui sommes-nous ?</a></li>
+                    <li><a href="{% url 'achievements' %}">Nos réalisations</a></li>
+                    <li><a href="{% url 'services' %}">Nos services</a></li>
+                    <li><a href="{% url 'outings' %}">Sortez</a></li>
+                    <li><a href="{% url 'participate' %}">Participez</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="content">
+        <div class="container">
+            {%  block content %}
+            {% endblock %}
+        </div>
+    </section>
+
+    <footer class="page-footer page-footer-home">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <div class="partners">
+                        <h5><i class="fa fa-handshake-o" aria-hidden="true"></i>Nos partenaires</h5>
+                        <ul class="partners">
+                            <li class="partner">
+                                <a href="http://www.paris.fr/" target="_blank">
+                                    <img src="{% static 'img/partners/mairie-de-paris.png' %}" alt="Marie de Paris"/>
+                                </a>
+                            </li>
+                            <li class="partner">
+                                <a href="https://www.iledefrance.fr/" target="_blank">
+                                    <img src="{% static 'img/partners/ile_de_france.png' %}" alt="Île de France"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- TODO : Search a JS lib for social buttons -->
+                    <div class="socials">
+                        <h5><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>Nous suivre</h5>
+                        <ul>
+                            <li class="social">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </li>
+                            <li class="social">
+                                <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5><i class="fa fa-calendar" aria-hidden="true"></i>Prochainement...</h5>
+                    <ul>
+                        {% for event in next_events %}
+                            <li><a class="grey-text text-lighten-3" href="{% url 'event-detail' pk=event.pk %}">{{ event.title }}</a>, le {{ event.date }} à {{ event.place }} - {{ event.description }}</li>
+                        {% empty %}
+                            <li>Pas d'événement à venir pour le moment !&nbsp;<i class="fa fa-frown-o" aria-hidden="true"></i></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright Art'Sign
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/7c8fad8fdd.js"></script>
+    <script src="{% static 'js/site.js' %}"></script>
+    <script src="{% static 'js/participate.js' %}"></script>
+</body>
+</html>

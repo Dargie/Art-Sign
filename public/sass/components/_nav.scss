@@ -12,3 +12,42 @@ nav {
         }
     }
 }
+
+aside {
+    .side-nav {
+        width: $side-nav-left-width;
+        overflow: hidden;
+        background-color: transparent;
+        box-shadow: 0 0 0 0;
+
+        .item-section {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 50%;
+            margin-left: 15px;
+            margin-bottom: 15px;
+	        width: 100px;
+	        height: 100px;
+            background-color: $primary-color-light;
+            &:first-child {
+                margin-top: 80px;
+            }
+            &:hover {
+                background-color: $primary-color-dark;
+                a {
+                    color: $primary-color-text;
+                    text-decoration: none;
+                    background-color: transparent;
+                }
+            }
+            a {
+                color: $accent-color;
+                font-size: 3em;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+    }
+}
