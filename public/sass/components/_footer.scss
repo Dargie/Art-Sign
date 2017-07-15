@@ -45,4 +45,17 @@ footer {
     .fa {
         color: $primary-color-light;
     }
+
+    .footer-next-event{
+        padding: 10px;
+        background-color: transparent;
+        &>.next-event-link{
+            transition: (color .3s ease-in-out);
+            text-decoration: none;
+            font-size: 13pt;
+            &:hover{
+                color: $primary-text-color !important;
+            }
+        }
+    }
 }

@@ -17,5 +17,30 @@
   pk: 3
   fields:
           title: Spectacle de marionnette
-          date: 2017-01-11T15:00:00+00:00
+          date: 2017-11-11T15:00:00+00:00
           place: Paris
+          description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea earum facilis incidunt nam nobis, numquam?
+
+- model: agenda.Event
+  pk: 4
+  fields:
+          title: Amet assumenda blanditiis
+          date: 2017-07-11T15:00:00+00:00
+          place: Paris
+          description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea earum facilis incidunt nam nobis, numquam?
+
+- model: agenda.Event
+  pk: 5
+  fields:
+          title: Consectetur adipisicing elit
+          date: 2017-08-20T15:00:00+00:00
+          place: Paris
+          description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea earum facilis incidunt nam nobis, numquam?
+
+- model: agenda.Event
+  pk: 6
+  fields:
+          title: Lorem ipsum dolor
+          date: 2017-09-11T15:00:00+00:00
+          place: Paris
+          description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea earum facilis incidunt nam nobis, numquam?
