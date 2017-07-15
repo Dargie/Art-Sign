@@ -1,0 +1,62 @@
+.container-event {
+  &>.event-list {
+    &>.event {
+
+      &>.event-date-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        height: 200px;
+        &>.card-panel{
+          height: 40px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid $accent-color;
+          box-shadow: none;
+          &>.event-card-date-element{
+            display: inline-block;
+            font-size: 17pt;
+            transition: color ease-in .3s, font-weight ease-in .3s;
+            &:hover{
+              color: $primary-text-color;
+              font-weight: bold;
+              cursor: pointer;
+              //font-size: 19pt;
+            }
+          }
+        }
+
+        @media (max-width:760px) {
+          &{
+            height: auto;
+          }
+        }
+      }
+      &>.event-details{
+        .card{
+          &>.card-content{
+            min-height: 200px;
+            height: auto;
+
+            &>.card-title{
+              color: $primary-color-dark ;
+            }
+          }
+          &>.card-action{
+            padding: 10px 24px;
+            color: $accent-color;
+            &>a{
+              color: inherit !important;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

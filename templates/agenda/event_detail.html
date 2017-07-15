@@ -3,9 +3,20 @@
 
 {% block content %}
 
-<h1>{{ event.title }}</h1>
-<h2>{{ event.description }}</h2>
-<p>À {{ event.place }}, le {{ event.date }}.</p>
-
+<div class="container-event-detail">
+	
+	<div class="col s12 event-detail-title">
+		<h3>{{ event.title }}</h3>
+	</div>
+	<div class="col s12 event-detail-description">
+		<h5>{{ event.description }}</h5>
+	</div>
+	<div class="row">
+		<div class="col offset-m7 m3 s12">
+			<p>À {{ event.place }}, le <b>{{ event.date }}</b>.</p>
+		</div>
+	</div>
+	
+</div>
 
 {% endblock content %}
